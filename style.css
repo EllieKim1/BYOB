@@ -25,7 +25,6 @@ h3{
 }
 */
 
-
 .intro_bg{
     background-color: rgb(254, 224, 114);
     width: 100%;
@@ -119,17 +118,17 @@ h3{
 .amount {
 position: relative;
 padding-top: 500px;
-width: 1440px;
 color: rgba(254, 224, 114, 0.531);
 margin: auto;
 background: none;
+
 }
 
 .amount > li {
-    flex: 1;
     cursor: pointer;
     height: 150px;
-    
+    justify-content: center;
+    text-align: center;
 }
 .amount > li > div{
     text-align: center;
@@ -153,17 +152,21 @@ background: none;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 30px;
+    cursor: pointer;
+
   }
 
     
 .section-title {
     font-size: 32px; 
-        margin-bottom: 10px; 
+    margin-bottom: 10px; 
+    cursor: pointer;
  }
 
     
 .section-content {
     font-size: 16px; 
+    cursor: pointer;
 }
 
 
@@ -172,6 +175,17 @@ background: none;
     color:rgb(202, 80, 23);
     font-weight: 700 ;
     font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color 0.3s ease-in-out;
+}
+
+.contents1:hover {
+  color: rgb(154, 61, 19); /* lighter color on hover */
+}
+
+.contents1:hover + a {
+  cursor: pointer; /* change cursor to pointer on hover */
 }
 .result {
     color:rgb(202, 80, 23);
@@ -598,3 +612,31 @@ div.backgroundcolorcontact {
   .popup-message .close:hover {
     color: #000;
   }
+
+ .checkitout {
+  background-color: rgba(255, 255, 255, 0.828);
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin: 50px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.checkitout > h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.checkitout > h4 {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.checkitout > li > a {
+  color:rgb(202, 80, 23);
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+
+}
